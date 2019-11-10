@@ -1,26 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { QRCode } from 'react-qrcode-logo';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<QRCode value="google.com" ecLevel="H" qrStyle="dots" logoWidth="200" />
+		// <QRCode value="google.com" ecLevel="H" qrStyle="dots" logoWidth="200" logoImage="https://www.shareicon.net/data/256x256/2017/06/22/887584_logo_512x512.png" />
+	);
 }
 
 export default App;
